@@ -12,22 +12,22 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbar-div">
           <ul className="navbar-nav" >
             <li className="nav-item active">
-              <NavLink className="nav-link" to="/">Home</NavLink>
+              <NavLink className="nav-link" to="/my-app">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">About</NavLink>
+              <NavLink className="nav-link" to="/my-app/about">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">Contact</NavLink>
+              <NavLink className="nav-link" to="/my-app/contact">Contact</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/login">Login</NavLink>
+              <NavLink className="nav-link" to="/my-app/login">Login</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/greating">Greating</NavLink>
+              <NavLink className="nav-link" to="/my-app/greating">Greating</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/cards">cards</NavLink>
+              <NavLink className="nav-link" to="/my-app/cards">cards</NavLink>
             </li>
 
           </ul>

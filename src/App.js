@@ -15,26 +15,26 @@ function App() {
   return (
     <>
       <Navbar />
-      <Route exact path="/" >
+      <Route exact path="/my-app" >
         <Home />
       </Route>
 
-      <Route path="/about">
+      <Route path="/my-app/about">
         <About />
       </Route>
 
-      <Route path="/contact">
+      <Route path="/my-app/contact">
         <Contact />
       </Route>
 
-      <Route path="/login">
+      <Route path="/my-app/login">
         <Login />
       </Route>
 
-      <Route path="/Greating">
+      <Route path="/my-app/Greating">
         <Greating />
       </Route>
-      <Route path="/cards">
+      <Route path="/my-app/cards">
          <div style={{display:"flex"}}>
         <Cards name="kuldeep" />
 
