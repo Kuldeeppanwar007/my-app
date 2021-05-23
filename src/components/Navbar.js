@@ -1,5 +1,6 @@
 import React from 'react'
 // import {Route} from 'react-router-dom'
+import Clock from "./Clock";
 
 import { NavLink } from 'react-router-dom'
 function Navbar() {
@@ -29,6 +30,14 @@ function Navbar() {
             <li className="nav-item">
               <NavLink className="nav-link" to="/my-app/cards">cards</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/my-app/covid">covid-19</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/my-app/Clock">Clock</NavLink>
+            </li>
+            <li className="nav-item"> <Clock/></li>
+            {/* <li className="nav-item"> </li> */}
 
           </ul>
 

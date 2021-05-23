@@ -1,15 +1,16 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import { Route } from 'react-router-dom'
+import { Route } from 'react-router-dom';
 import './App.css';
-import Navbar from './components/Navbar'
-import Greating from './components/greating'
-import About from './components/About'
+import Navbar from './components/Navbar';
+import Greating from './components/greating';
+import About from './components/About';
 import Contact from './components/Contact'
-import Home from './components/Home'
-import Login from './components/Login'
+import Home from './components/Home';
+import Login from './components/Login';
 import Cards from './components/cards';
-
+import Covid from './components/covid';
+import Clock from './components/Clock';
 
 function App() {
   return (
@@ -35,15 +36,13 @@ function App() {
         <Greating />
       </Route>
       <Route path="/my-app/cards">
-         <div style={{display:"flex"}}>
-        <Cards name="kuldeep" />
-
-        <Cards name="panwar" />
-
-
-        <Cards name="sanjna panwar" />
-
-        </div>
+        <Cards/>
+      </Route>
+      <Route path="/my-app/covid">
+        <Covid/>
+      </Route>
+      <Route path="/my-app/Clock">
+        <Clock/>
       </Route>
 
 

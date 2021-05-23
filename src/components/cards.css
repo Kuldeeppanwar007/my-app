@@ -3,3 +3,17 @@
 
     color: red;
 }
+
+tr td {
+
+    border: 1px solid red;
+}
+.table-div{
+   display: flex;
+justify-content: center;
+
+    margin: 20%;
+  
+
+
+}

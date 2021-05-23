@@ -1,18 +1,35 @@
 import React from "react"
 // import ReactDOM from "react-dom"
 import "./cards.css";
+import datax from "./data1";
 
 
-function cards(props)
+function cards()
 {
  
+  const rdata=datax.map((val)=>{
+      
+    
+return(<>
+          <tr>
+            <td>{val.sname}</td>
+            <td>{val.phone}</td>
+          </tr>
+  </>)
+  })
+
+ 
 return(
-  <>
-  <div style={{}}>
-    <p className="head-bar"> hy i am {props.name}</p>
-    <img src="https://occ-0-4344-3647.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSIveZZlnOhfDnhLQzV9dSpkQZGxZpo8XyL-zvMurmkBXQGVLHSdi5ceEEg1jKFsvrZbUMYsRTMrSkqXFgPzOLMOSv_FbQZKRzDxB3GxxDlnrP-iqwDU3Idl6bSx.jpg?r=a0a" alt="netlix"/>
-  </div>
-  </>
+  <div className="table-div">
+  <table style={{border:"2px solid black", borderCollapse:"collapse"}}>
+    <tr>
+         <td>name</td>
+         <td>phone</td>
+
+    </tr>
+         {rdata}
+  </table>
+</div>
 
 )
 
