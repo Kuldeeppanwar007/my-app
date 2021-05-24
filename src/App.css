@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+background-color: #ffffff;
+
+}
 
 #navbar-div{
 
@@ -41,3 +45,83 @@
   margin: 20%;
   /* margin-top: auto; */
 }
+
+
+
+
+/* signup form css */
+.form-div{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 650px;
+}
+
+
+
+
+
+
+.form{
+    display: grid;
+
+   text-align: center;
+   width: 500px;
+   height: 500px;
+   /* background-color:  rgb(237, 243, 242); */
+   box-shadow: 0 4px 10px 4px rgba(41, 20, 20, 0.3);
+   border-radius: 15px;
+  }
+
+  .form h2{
+    text-transform:uppercase;
+    padding-top: 15px;
+  }
+
+
+  .form-control{
+    background-color:rgba(255, 255, 255, 0.377);
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    
+  }
+  .form-control:hover{
+    background-color:rgba(255, 255, 255, 0.377);
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+    
+  }
+  
+  
+
+  .form button{
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 5px;
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(226, 226, 213));
+    /* z-index: 1; */
+  }
+  .form button:hover{
+    margin-left: 120px;
+    margin-right: 120px;
+    border-radius: 5px;
+    /* background-color: green; */
+    background-image: linear-gradient(#95e795, #95e795);
+  /* background-color: #74c474; */
+  cursor: pointer;
+  /* z-index: 2; */
+}
+.active{
+
+  text-transform:capitalize;
+  
+  color: rgb(153, 0, 255);
+}
+
+  
+  
+

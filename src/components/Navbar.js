@@ -22,7 +22,7 @@ function Navbar() {
               <NavLink className="nav-link" to="/my-app/contact">Contact</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/my-app/login">Login</NavLink>
+              <NavLink className="nav-link" to="/my-app/signUp">signUp</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/my-app/greating">Greating</NavLink>

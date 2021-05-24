@@ -7,7 +7,7 @@ import Greating from './components/greating';
 import About from './components/About';
 import Contact from './components/Contact'
 import Home from './components/Home';
-import Login from './components/Login';
+import Signup from './components/signup';
 import Cards from './components/cards';
 import Covid from './components/covid';
 import Clock from './components/Clock';
@@ -28,8 +28,8 @@ function App() {
         <Contact />
       </Route>
 
-      <Route path="/my-app/login">
-        <Login />
+      <Route path="/my-app/signUp">
+        <Signup/>
       </Route>
 
       <Route path="/my-app/Greating">
