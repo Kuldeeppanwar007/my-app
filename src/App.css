@@ -6,6 +6,9 @@
 
 body {
   background-color: #ffffff;
+  /* background-image: url("https://assets.wallpapersin4k.org/uploads/2017/04/Half-Black-Half-White-Wallpaper-1.png");
+  background-repeat: no-repeat;
+  background-size:cover; */
 }
 
 #navbar-div {
@@ -14,7 +17,7 @@ body {
   box-shadow: 0 4px 10px 4px rgba(41, 20, 20, 0.3);
 }
 
-.navbar-nav,.activetoggle {
+.navbar-nav, .activetoggle {
   list-style: none;
   display: flex;
   padding-top: 0px;
@@ -40,66 +43,58 @@ body {
 }
 
 #toggle-menu {
-  display:none;
- 
+  display: none;
 }
-
 
 @media (max-width: 1070px) {
   .navbar-nav {
+    transition: 0.5s;
     list-style: none;
     display: flex;
     padding-top: 0px;
     padding-bottom: 0px;
     margin-left: 10px;
-    transition: 0.5s;
   }
   .nav-item {
+    transition: 0.5s;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
-    transition: 0.5s;
   }
 }
 
 @media (max-width: 850px) {
-  
   .navbar-nav {
+    transition: 0.5s;
     padding-bottom: 20px;
-    
-    transition: 0.5s;
   }
-  #navbar-div{
+  #navbar-div {
+    transition: 0.5s;
     padding-bottom: 15px;
-    transition: 0.5s;
   }
-  
-  .nav-item{
+  .nav-item {
+    transition: 0.5s;
     display: none;
-    transition: 0.5s;
-    
   }
-  
   #toggle-menu {
+    transition: 0.5s;
     /* color: white; */
-    display:inline;
+    display: inline;
     /* visibility: hidden; */
     color: white;
     position: absolute;
     right: 50px;
     top: -1px;
     font-size: xx-large;
-    transition: 0.5s;
   }
-  #toggle-menu:hover{
+  #toggle-menu:hover {
     cursor: pointer;
   }
-  
   .activetoggle li {
-    display: flex;
     transition: 0.5;
+    display: flex;
     /* flex-direction: column; */
-    transition: 0.5s;
+    /* transition: 0.5s; */
   }
   .activetoggle {
     transition: 0.5;
@@ -109,6 +104,7 @@ body {
 }
 
 .grate {
+  transition: 0.5s;
   text-align: center;
   margin: 20%;
   /* margin-top: auto; */
@@ -117,6 +113,7 @@ body {
 /* signup form css */
 
 .form-div {
+  transition: 0.5s;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -124,6 +121,7 @@ body {
 }
 
 .form {
+  transition: 0.5s;
   display: grid;
   text-align: center;
   width: 500px;
@@ -134,11 +132,13 @@ body {
 }
 
 .form h2 {
+  transition: 0.5s;
   text-transform: uppercase;
   padding-top: 15px;
 }
 
 .form-control {
+  transition:0.5s ease-in-out;
   background-color: rgba(255, 255, 255, 0.377);
   width: 400px;
   height: 30px;
@@ -147,7 +147,9 @@ body {
 }
 
 .form-control:hover {
-  background-color: rgba(255, 255, 255, 0.377);
+  transition:0.5s ease-in-out;
+  /* background-color: rgba(255, 255, 255, 0.377); */
+  background-color: rgba(240, 182, 182, 0.377);
   width: 400px;
   height: 30px;
   border-radius: 10px;
@@ -155,6 +157,7 @@ body {
 }
 
 .form button {
+  transition: 0.5s;
   margin-left: 120px;
   margin-right: 120px;
   border-radius: 5px;
@@ -163,6 +166,7 @@ body {
 }
 
 .form button:hover {
+  transition: 0.5s;
   margin-left: 120px;
   margin-right: 120px;
   border-radius: 5px;
@@ -174,6 +178,40 @@ body {
 }
 
 .active {
+  transition: 0.5s;
   text-transform: capitalize;
   color: rgb(153, 0, 255);
+}
+
+@media (max-width: 600px) {
+  .form {
+    transition: 0.5s;
+    display: grid;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    /* background-color:  rgb(237, 243, 242); */
+    box-shadow: 0 4px 10px 4px rgba(41, 20, 20, 0.3);
+    border-radius: 15px;
+    /* transition: all; */
+    transition: 0.5s;
+  }
+  
+  .form-control {
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.377);
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+  .form-control:hover {
+    transition: 0.5s;
+    background-color: rgba(240, 182, 182, 0.377);
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+  }
+
 }
