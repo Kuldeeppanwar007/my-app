@@ -167,11 +167,11 @@ body {
 
 .form button:hover {
   transition: 0.5s;
+  background-image: linear-gradient(#95e795, #95e795);
   margin-left: 120px;
   margin-right: 120px;
   border-radius: 5px;
   /* background-color: green; */
-  background-image: linear-gradient(#95e795, #95e795);
   /* background-color: #74c474; */
   cursor: pointer;
   /* z-index: 2; */
@@ -212,6 +212,26 @@ body {
     height: 30px;
     border-radius: 10px;
     padding-left: 15px;
+  }
+  .form button {
+    transition: 0.5s;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 5px;
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(226, 226, 213));
+    /* z-index: 1; */
+  }
+  
+  .form button:hover {
+    transition: 0.5s;
+    background-image: linear-gradient(#95e795, #95e795);
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 5px;
+    /* background-color: green; */
+    /* background-color: #74c474; */
+    cursor: pointer;
+    /* z-index: 2; */
   }
 
 }
