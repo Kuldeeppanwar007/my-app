@@ -11,14 +11,63 @@ body {
   background-size:cover; */
 }
 
+.Footer-container {
+  transition: all 0.5s ease;
+  margin-top: 8px;
+  /* background-color: rgb(235, 195, 64); */
+  background-color: #282A35;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer span {
+  float: left;
+  padding: 14px;
+  /* padding: 8px; */
+  color: white;
+}
+
+.footer a {
+  padding: 14px;
+  transition: all 0.5s ease;
+  float: right;
+  text-align: center;
+  margin: auto 30px auto 30px;
+  color: white;
+}
+
+.footer a:hover {
+  background-color: #95e795;
+}
+
+@media (max-width:513px) {
+  .footer a {
+    transition: all 0.5s ease;
+    float: right;
+    margin: auto 10px auto 10px;
+    color: white;
+  }
+}
+
+@media (max-width:393px) {
+  .footer a {
+    transition: all 0.5s ease;
+    float: right;
+    margin: auto 5px auto 5px;
+    color: white;
+  }
+}
+
 #navbar-div {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   background-color: #282A35;
   box-shadow: 0 4px 10px 4px rgba(41, 20, 20, 0.3);
 }
 
 .navbar-nav, .activetoggle {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   list-style: none;
   display: flex;
   padding-top: 0px;
@@ -49,7 +98,7 @@ body {
 
 @media (max-width: 1070px) {
   .navbar-nav {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     list-style: none;
     display: flex;
     padding-top: 0px;
@@ -57,7 +106,7 @@ body {
     margin-left: 10px;
   }
   .nav-item {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     padding: 10px;
     margin-left: 5px;
     margin-right: 5px;
@@ -66,19 +115,19 @@ body {
 
 @media (max-width: 850px) {
   .navbar-nav {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     padding-bottom: 20px;
   }
   #navbar-div {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     padding-bottom: 15px;
   }
   .nav-item {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     display: none;
   }
   #toggle-menu {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     /* color: white; */
     display: inline;
     /* visibility: hidden; */
@@ -92,20 +141,20 @@ body {
     cursor: pointer;
   }
   .activetoggle li {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     display: flex;
     /* flex-direction: column; */
-    /* transition: 0.5s; */
+    /* transition: all 0.5s ease; */
   }
   .activetoggle {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     /* display: flex; */
     flex-direction: column;
   }
 }
 
 .grate {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   text-align: center;
   margin: 20%;
   /* margin-top: auto; */
@@ -114,7 +163,7 @@ body {
 /* signup form css */
 
 .form-div {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -122,7 +171,7 @@ body {
 }
 
 .form {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   display: grid;
   text-align: center;
   width: 500px;
@@ -133,32 +182,41 @@ body {
 }
 
 .form h2 {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   text-transform: uppercase;
   padding-top: 15px;
 }
 
 .form-control {
-  transition:0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   background-color: rgba(255, 255, 255, 0.377);
   width: 400px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 3px;
+  outline: none;
+  ;
+  border: 1px solid #ccc;
   padding-left: 10px;
 }
 
 .form-control:hover {
-  transition:0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   /* background-color: rgba(255, 255, 255, 0.377); */
-  background-color: rgba(240, 182, 182, 0.377);
+  background-color: rgba(240, 182, 182, 0.19);
   width: 400px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 3px;
+  outline: none;
+  ;
   padding-left: 15px;
 }
 
+.form-control:focus {
+  border-color: #8E49E8;
+}
+
 .form button {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   margin-left: 120px;
   margin-right: 120px;
   border-radius: 5px;
@@ -167,7 +225,7 @@ body {
 }
 
 .form button:hover {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   background-image: linear-gradient(#95e795, #95e795);
   margin-left: 120px;
   margin-right: 120px;
@@ -179,14 +237,14 @@ body {
 }
 
 .active {
-  transition: 0.5s;
+  transition: all 0.5s ease;
   text-transform: capitalize;
   color: rgb(153, 0, 255);
 }
 
 @media (max-width: 600px) {
   .form {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     display: grid;
     text-align: center;
     width: 300px;
@@ -195,36 +253,36 @@ body {
     box-shadow: 0 4px 10px 4px rgba(41, 20, 20, 0.3);
     border-radius: 15px;
     /* transition: all; */
-    transition: 0.5s;
+    transition: all 0.5s ease;
   }
-  
   .form-control {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     background-color: rgba(255, 255, 255, 0.377);
     width: 250px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 3px;
+    outline: none;
     padding-left: 10px;
   }
   .form-control:hover {
-    transition: 0.5s;
-    background-color: rgba(240, 182, 182, 0.377);
+    transition: all 0.5s ease;
+    background-color: rgba(240, 182, 182, 0.19);
     width: 250px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 3px;
+    outline: none;
     padding-left: 15px;
   }
   .form button {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     margin-left: 80px;
     margin-right: 80px;
     border-radius: 5px;
     background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(226, 226, 213));
     /* z-index: 1; */
   }
-  
   .form button:hover {
-    transition: 0.5s;
+    transition: all 0.5s ease;
     background-image: linear-gradient(#95e795, #95e795);
     margin-left: 80px;
     margin-right: 80px;
@@ -234,5 +292,96 @@ body {
     cursor: pointer;
     /* z-index: 2; */
   }
+}
 
+/* todo */
+
+.todo-form {
+  transition: all 0.5s ease;
+  /* display:grid; */
+  /* text-align: center; */
+  padding: 25px;
+  width: 500px;
+  height: 500px;
+  /* background-color:  rgb(237, 243, 242); */
+  box-shadow: 0 4px 10px 4px rgba(41, 20, 20, 0.3);
+  border-radius: 15px;
+}
+
+.todo-form .todo-input {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.todo-input input {
+  width: 85%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.todo-input input:focus {
+  border-color: #8E49E8;
+}
+
+.todo-input button {
+  width: 50px;
+  margin-left: 5px;
+  height: 100%;
+  outline: none;
+  font-size: 22px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  background: #8E49E8;
+  color: white;
+  opacity: 0.6;
+  /* pointer-events: none; */
+  /* padding-left: 15px; */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todo-input button:hover {
+  background: #721ce3;
+}
+
+.todo-form .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.todoList li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.todoList li .icon {
+  position: absolute;
+  right: -45px;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.todoList li:hover .icon {
+  right: 0px;
 }

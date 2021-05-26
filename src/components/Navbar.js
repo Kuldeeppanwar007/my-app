@@ -50,7 +50,7 @@ function Navbar() {
               <NavLink className="nav-link" to="/my-app/covid">covid-19</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/my-app/Clock">Clock</NavLink>
+              <NavLink className="nav-link" to="/my-app/toDo">to-do</NavLink>
             </li>
             <li className="nav-item"> <Clock /></li>
             {/* <li className="nav-item"> </li> */}
