@@ -12,7 +12,7 @@ const Footer = () => {
         <>
             <div className="Footer-container">
 
-                <div  class="footer">
+                <div  className="footer">
                     <span>© 2021 by Kuldeep panwar.</span>
                     {/* <a href="https://www.linkedin.com/in/kuldeep-panwar-0433a5184" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a> */}
                     <a href="https://github.com/Kuldeeppanwar007" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>

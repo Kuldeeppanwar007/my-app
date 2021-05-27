@@ -13,6 +13,16 @@ const datax = [
     {
         sname : "kishanlal",
         phone : "9826488343"
+    },
+    {
+        sname : 'raghuveer',
+        phone : "6232371706"
+
+    },
+    {
+        sname : 'sandeep',
+        phone : "9752997121"
+
     }
 
 
