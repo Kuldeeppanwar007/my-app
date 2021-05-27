@@ -57,7 +57,7 @@ function Navbar() {
 
           </ul>
           <div id="toggle-menu" className={isActive ? 'activetoggle' : ""}
-            onClick={toggleClass}>{k? <i class="fas fa-times"></i> :<i class="fas fa-bars"></i>}</div>
+            onClick={toggleClass}>{k? <i className="fas fa-times"></i> :<i className="fas fa-bars"></i>}</div>
 
         </div>
       </nav>
