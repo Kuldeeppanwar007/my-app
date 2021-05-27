@@ -59,6 +59,24 @@ body {
     color: white;
   }
 }
+@media (max-width:362px) {
+  .footer a {
+    transition: all 0.5s ease;
+    float: right;
+    margin: auto 2px auto 2px;
+    color: white;
+  }
+  .footer span {
+    float: left;
+    padding: 14px;
+    /* padding-left: 0px;
+    padding-right: 0px; */
+    font-size: x-small;
+    /* padding: 8px; */
+    color: white;
+  }
+  
+}
 
 #navbar-div {
   transition: all 0.5s ease;
