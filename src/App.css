@@ -544,4 +544,10 @@ body {
   padding-right: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.covi-select option:hover{
+   background: #00c19457;
+   /* color: black; */
+
  }
