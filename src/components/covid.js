@@ -10,6 +10,7 @@ import axios from 'axios';
 
 
 function Covid() {
+    getData();
     const [num, setnum] = useState('0')
     const [statename, setStatename] = useState('0');
     const [totalConfirmed, settotalConfirmed] = useState('0');
@@ -39,15 +40,14 @@ function Covid() {
         settotalConfirmed(cdata.totalConfirmed)
         setdischarged(cdata.discharged)
         setdeaths(cdata.deaths)
+        console.log(num);
 
 
 
     };
-    console.log(num);
     // setnum(19);
-    getData();
-
-
+    
+    
     return (
         <>
             <div className="form-div">
